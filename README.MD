@@ -1,4 +1,4 @@
-# Shape Creator
+# Shape Factory
 
 This project is a simple web application that allows users to create shapes of different colors and add them to a grid. The shapes are created based on the user's selection from a dropdown menu. The color of the shape is also selected by the user from a dropdown menu. The created shapes are added to a grid and the user can create up to 25 shapes.
 
