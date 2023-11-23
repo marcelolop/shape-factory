@@ -140,6 +140,7 @@ onEvent("click", clearButton, function () {
 
   // Clear the text content of the feedback element.
   feedback.textContent = "";
+  feedback.style.color = "inherit";
 
   // Call the limitShapes() function to limit the number of shapes.
   limitShapes();
