@@ -98,7 +98,7 @@ h2 {
 .shape-container {
     align-items: center;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     width: 60rem;
     height: 60rem;
     padding: 2rem;

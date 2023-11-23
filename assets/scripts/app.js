@@ -3,28 +3,6 @@
 import { Shape } from "./classes.js";
 import { onEvent, getElement, select, selectAll } from "./utility-functions.js";
 
-/*
-Directions and requirements
-• Implement two select elements, one for the shapes and one for the colors.
-• Create a box (grid) to contain at least 20 different shapes (circles and squares).
-• Add the necessary style for circles and squares. Colors will be defined via JavaScript.
-• Create a class named Shape with a constructor, 2 accessor properties (name and color) and 
-1 method (getInfo()).
-• Name and color (actually _name and _color) must be accessed through get properties.
-• The ‘Create’ button will create a Shape object, save it in an array and add a new shape (div) 
-to the grid. This div is the HTML representation of the JavaScript object.
-• Implement a function named createShape() to create and append a shape to the grid box.
-• getInfo() returns the name of the shape and its color. This method is called when the user 
-clicks on one of the shapes.
-Colors
-• Blue: #09f
-• Green: #9f0
-• Orange: #f90
-• Pink: #f09
-• Purple: #90f
-
-*/
-
 // Dom elements
 const shapeSelect = getElement("shape");
 const colorSelect = getElement("color");
