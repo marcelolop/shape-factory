@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+:root {
+    --app-shape-color-blue: #09f;
+    --app-shape-color-green: #9f0;
+    --app-shape-color-orange: #f90;
+    --app-shape-color-pink: #f09;
+    --app-shape-color-purple: #90f;
+    --app-shape-size: 10rem;
+    --app-shape-border-radius: 50%;
+}
+
+.container {
+    width: minmax(100% - 3rem, 120rem);
+    margin-inline: auto;
+}
+
+.container-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    height: 100dvh;
+    background-color: #202020;
+}
+
+h2 {
+    color: #fff;
+    font-size: 3.2rem;
+}
+
+.shape-selectors {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.shape-selectors select {
+    width: 15rem;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: #464646;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #555;
+    }
+
+    &:focus {
+        background-color: #666;
+    }
+
+    &:active {
+        background-color: #777;
+    }
+}
+
+.shape-selectors option {
+    transition: all 0.3s ease;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.create-button,
+.clear-button {
+    width: 10rem;
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: var(--app-shape-color-orange);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+        background-color: #fdb240;
+    }
+
+    &:focus {
+        background-color: #fca311;
+    }
+
+    &:active {
+        background-color: #f48c06;
+        transform: scale(0.95);
+    }
+}
+
+.shape-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    width: 50rem;
+    height: 50rem;
+    background-color: #2f2f2f;
+    border-radius: 1rem;
+}
+
+.shape {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+}
+
+.circle {
+    width: calc(var(--app-shape-size) * 0.75);
+    height: calc(var(--app-shape-size) * 0.75);
+    border-radius: 50%;
+    background-color: var(--app-shape-color);
+}
+
+.square {
+    width: calc(var(--app-shape-size) * 0.75);
+    height: calc(var(--app-shape-size) * 0.75);
+    background-color: var(--app-shape-color);
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: calc(var(--app-shape-size) * 0.5) solid transparent;
+    border-right: calc(var(--app-shape-size) * 0.5) solid transparent;
+    border-bottom: var(--app-shape-size) solid var(--app-shape-color);
+    transform: rotate(180deg);
+}
+
+
+.output-feedback {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 100%;
+    height: 3rem;
+    text-align: center;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <script src="./scripts/app.js" type="module" defer></script>
+    <title>Shape Factory</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="container-center">
+          <h2>Shape Factory</h2>
+          <div class="shape-selectors">
+            <select name="shape" id="shape" title="shape">
+              <option value="circle">Circle</option>
+              <option value="square">Square</option>
+              <option value="triangle">Triangle</option>
+            </select>
+            <select name="color" id="color" title="color">
+              <option value="Blue">Blue</option>
+              <option value="Green">Green</option>
+              <option value="Orange">Orange</option>
+              <option value="Pink">Pink</option>
+              <option value="Purple">Purple</option>
+            </select>
+            <button class="create-button" id="create-button" title="create">
+              Create
+            </button>
+          </div>
+          <div class="shape-container container">
+            <div class="shape" id="grid">
+            </div>
+          </div>
+          <div class="output-feedback" >
+              <p id="feedback"></p>
+          </div>
+          <div class ="clear-button-container">
+            <button class="clear-button" id="clear-button" title="clear">Clear All</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
