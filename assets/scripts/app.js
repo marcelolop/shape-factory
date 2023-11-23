@@ -144,5 +144,6 @@ onEvent("click", clearButton, function () {
   // Call the limitShapes() function to limit the number of shapes.
   limitShapes();
 });
+
 // Add click event listener to the create button
 onEvent("click", createButton, createShape);
