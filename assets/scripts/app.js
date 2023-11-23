@@ -131,7 +131,7 @@ function createShape() {
   shapeDiv.dataset.index = shapes.length - 1;
 
   // Add an event listener to the div element for the "click" event
-  shapeDiv.addEventListener("click", function () {
+  onEvent("click", shapeDiv, function () {
     // Get the index of the shape in the shapes array
     const index = shapes.indexOf(shape);
 
