@@ -37,7 +37,7 @@ h2 {
 }
 
 .shape-selectors select {
-    width: 15rem;
+    width: 12rem;
     padding: 0.5rem;
     font-size: 2rem;
     border-radius: 0.5rem;
@@ -69,7 +69,7 @@ h2 {
 
 .create-button,
 .clear-button {
-    width: 10rem;
+    width: 11rem;
     padding: 0.5rem;
     font-size: 2rem;
     font-weight: 700;
@@ -93,6 +93,12 @@ h2 {
         background-color: #f48c06;
         transform: scale(0.95);
     }
+}
+
+label {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
 }
 
 .shape-container {

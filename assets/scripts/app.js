@@ -65,7 +65,7 @@ function limitShapes() {
     createButton.disabled = true;
     // Display a feedback message indicating that the maximum number of shapes has been reached
     feedback.textContent = `You have reached the maximum number of shapes (25).
-      Please click the "Clear All" button to remove all shapes.`;
+      Please click the "Clear" button to remove all shapes.`;
     // Change the color of the feedback message to red
     feedback.style.color = "red";
   } else {
