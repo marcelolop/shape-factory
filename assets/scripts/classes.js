@@ -1,8 +1,8 @@
 "use strict";
 
 class Shape {
-  _name; // private property
-  _color; // private property
+  _name; 
+  _color; 
 
   constructor(name, color) {
     this._name = name; // setting the initial value of name
