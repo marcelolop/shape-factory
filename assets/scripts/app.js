@@ -1,6 +1,6 @@
 "use strict";
 
-import { Shape } from "./classes.js";
+import { Shape } from "./Shapes.js";
 import { onEvent, getElement, select, selectAll } from "./utility-functions.js";
 
 // Dom elements
