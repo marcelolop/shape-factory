@@ -1,7 +1,7 @@
 "use strict";
 
-import { Shape } from "./Shapes.js";
-import { onEvent, getElement, select, selectAll } from "./utility-functions.js";
+import { Shape } from "./classes/Shapes.js";
+import { onEvent, getElement, select, selectAll } from "./utils/utility-functions.js";
 
 // Dom elements
 const shapeSelect = getElement("shape");
@@ -19,7 +19,6 @@ function selectShape() {
 function formatShapeName(shapeName) {
   return shapeName.charAt(0).toUpperCase() + shapeName.slice(1).toLowerCase();
 }
-
 
 const colors = {
   Blue: "#09f",

@@ -1,11 +1,7 @@
 @charset "utf-8";
 
 :root {
-    --app-shape-color-blue: #09f;
-    --app-shape-color-green: #9f0;
     --app-shape-color-orange: #f90;
-    --app-shape-color-pink: #f09;
-    --app-shape-color-purple: #90f;
     --app-shape-size: 10rem;
     --app-shape-border-radius: 50%;
 }
@@ -121,7 +117,8 @@ label {
     gap: 1rem;
     width: 100%;
     height: 100%;
-    transform: rotate(180deg);
+    transform: rotateY(180deg);
+    transform: rotateX(180deg);
 }
 
 .circle {
@@ -135,6 +132,7 @@ label {
     width: calc(var(--app-shape-size) * 0.95);
     height: calc(var(--app-shape-size) * 0.95);
     background-color: var(--app-shape-color);
+    border-radius: 0.5rem;
 }
 
 .triangle {
